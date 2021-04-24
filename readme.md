@@ -14,6 +14,12 @@ Use pipenv to install the enviroment with his dependencies:
 pipenv shell
 ```
 
+Start the containers with start.sh script:
+
+```bash
+source start.sh
+```
+
 ## Usage
 
 #### Set the string connection in base.py
@@ -34,6 +40,20 @@ python inserts.py
 
 ```bash
 python queries.py
+```
+
+## Stop and Destroy Containers
+
+Stop the containers with stop.sh script:
+
+```bash
+source stop.sh
+```
+
+Destroy the containers with destroy.sh script:
+
+```bash
+source destroy.sh
 ```
 
 ## Contributing

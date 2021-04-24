@@ -1,2 +1,15 @@
-pipenv shell 
-docker run -e POSTGRES_PASSWORD=pass -e POSTGRES_USER=user -e POSTGRES_DB=sqlalchemy -p 5432:5432 -d postgres
+#!/bin/bash
+echo " "
+echo " "
+echo "***************************************************"
+echo "**                                               **"
+echo "**  Edit base.py and set the string connection.  **"
+echo "**                                               **"
+echo "***************************************************"
+echo " "
+echo " Starting containers..."
+echo " "
+echo " "
+read -t 5
+pipenv shell
+docker-compose up --build
